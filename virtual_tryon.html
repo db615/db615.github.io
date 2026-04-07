@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Try-on - DB Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <div class="logo-circle">◉</div>
+            <span>DB</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#hero">Services</a></li>
+            <li><a href="index.html#our-work">Our work</a></li>
+        </ul>
+        <button class="nav-contact-btn" onclick="window.location.href='index.html#contact'">Contact US</button>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="service-hero-content">
+            <h1>Virtual Try-on</h1>
+            <p>Virtual Try-On (VTO) is an AI and AR-driven technology that allows customers to visualize apparel, accessories, or cosmetics on themselves instantly, reducing returns and increasing purchase confidence. Using 3D mapping and computer vision, it enables virtual fitting for clothing, cosmetics, and eyewear, fostering a more engaging and personalized online shopping experience.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="service-features">
+        <div class="features-container">
+            <!-- Left Column - Features List -->
+            <div class="features-left">
+                <div class="features-label">Features</div>
+                <h2 class="features-title">Virtual tryon ko features</h2>
+                <p class="features-description">Maximize success with our flexible product features. Customize, stay compatible across platforms, and receive reliable support for optimized performance.</p>
+
+                <!-- Feature Items -->
+                <div class="feature-list">
+                    <div class="feature-item-service">
+                        <div class="feature-number">Feature 1</div>
+                        <p class="feature-text">Leverage real-time insights for well-informed decisions. Track key metrics based on data-driven analysis.</p>
+                    </div>
+
+                    <div class="feature-item-service">
+                        <div class="feature-number">Feature 2</div>
+                        <p class="feature-text">Simplify data visualization. Choose intuitive charts and interactive graphs for clear presentation.</p>
+                    </div>
+
+                    <div class="feature-item-service">
+                        <div class="feature-number">Feature 3</div>
+                        <p class="feature-text">Advanced analytics for deeper insights. Discover patterns and hidden value through data segmentation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Image/Dashboard -->
+            <div class="features-right">
+                <div class="feature-image-container">
+                    <img src="assets/images/virtual_tryon1.png" alt="Virtual Try-on Dashboard" class="feature-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="service-demo">
+        <div class="demo-container">
+            <!-- Left - Image -->
+            <div class="demo-image">
+                <img src="assets/images/virtual_tryon2.png" alt="Virtual Try-on Demo" class="demo-img">
+            </div>
+
+            <!-- Right - Content -->
+            <div class="demo-content">
+                <h2>Know how the machine works before you use</h2>
+                <p>Start your journey towards data-driven success by taking advantage of our demo session.</p>
+                <button class="btn-demo">Request a demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2>Frequently asked questions</h2>
+                <p>For any unanswered questions, reach out to our support team via email. We'll respond as soon as possible to assist you.</p>
+            </div>
+
+            <div class="faq-items">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How do I get started with your product?</span>
+                        <span class="faq-icon">−</span>
+                    </button>
+                    <div class="faq-answer" style="display: block;">
+                        <p>Sign up on our website, explore features, customize your profile, and start using our product. We're here to help!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What payment methods do you accept?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, digital wallets, and bank transfers for your convenience.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is there a free trial available?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer a 14-day free trial for all new users. No credit card is required to get started.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is technical support available?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our dedicated support team is available 24/7 to assist you via email, chat, and phone.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I cancel my subscription?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel anytime from your account settings. No questions asked, no hidden fees.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is my data secure with your product?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We use enterprise-grade encryption and comply with all major data protection regulations to keep your data safe.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-footer">
+                <h3>Didn't find an answer to your question?</h3>
+                <p>Is there something you're uncertain about? Reach out to our welcoming team for assistance.</p>
+                <button class="btn-contact-faq" onclick="window.location.href='index.html#contact'">Contact us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons-footer">
+                    <a href="#" class="social-icon-footer" title="Twitter">𝕏</a>
+                    <a href="#" class="social-icon-footer" title="Facebook">f</a>
+                    <a href="#" class="social-icon-footer" title="LinkedIn">in</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DB Company. All rights reserved. | Crafted with passion for digital excellence</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -121,3 +121,28 @@ window.addEventListener('scroll', function() {
         navToggleLink.href = '#services';
     }
 });
+// FAQ Accordion Toggle
+function toggleFAQ(button) {
+    const faqItem = button.parentElement;
+    const answer = faqItem.querySelector('.faq-answer');
+    const icon = button.querySelector('.faq-icon');
+    
+    // Close all other FAQs
+    document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+            const itemAnswer = item.querySelector('.faq-answer');
+            const itemIcon = item.querySelector('.faq-icon');
+            itemAnswer.style.display = 'none';
+            itemIcon.textContent = '+';
+        }
+    });
+    
+    // Toggle current FAQ
+    if (answer.style.display === 'none' || answer.style.display === '') {
+        answer.style.display = 'block';
+        icon.textContent = '−';
+    } else {
+        answer.style.display = 'none';
+        icon.textContent = '+';
+    }
+}
