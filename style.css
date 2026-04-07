@@ -565,11 +565,14 @@ nav {
 .testimonials {
     padding: 5rem 5%;
     background: #ffffff;
+    width: 100%;
+    overflow: hidden;
 }
 
 .testimonials-container {
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .testimonials-subtitle {
@@ -590,12 +593,17 @@ nav {
 .testimonials-carousel {
     position: relative;
     min-height: 400px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: visible;
 }
 
 .testimonial-card {
     background: transparent;
     border: none;
-    padding: 3rem 0;
+    padding: 3rem 2rem;
     border-radius: 0;
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -606,6 +614,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
 }
 
@@ -1544,5 +1553,20 @@ footer {
 
     .hero-illustration {
         order: -1;
+    }
+
+    .testimonial-card {
+        grid-template-columns: 200px 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+    }
+
+    .testimonial-avatar-large {
+        width: 200px;
+        height: 200px;
+    }
+
+    .testimonial-quote {
+        font-size: 1rem;
     }
 }
