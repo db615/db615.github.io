@@ -1,3 +1,30 @@
+// Testimonials Carousel Navigation
+const prevBtns = document.querySelectorAll('.prev-arrow');
+const nextBtns = document.querySelectorAll('.next-arrow');
+const testimonialCards = document.querySelectorAll('.testimonial-card');
+let currentTestimonial = 0;
+
+function showTestimonial(index) {
+    testimonialCards.forEach(card => card.classList.remove('active'));
+    testimonialCards[index].classList.add('active');
+}
+
+function nextTestimonial() {
+    currentTestimonial = (currentTestimonial + 1) % testimonialCards.length;
+    showTestimonial(currentTestimonial);
+}
+
+function prevTestimonial() {
+    currentTestimonial = (currentTestimonial - 1 + testimonialCards.length) % testimonialCards.length;
+    showTestimonial(currentTestimonial);
+}
+
+prevBtns.forEach(btn => btn.addEventListener('click', prevTestimonial));
+nextBtns.forEach(btn => btn.addEventListener('click', nextTestimonial));
+
+// Auto-rotate testimonials every 5 seconds
+setInterval(nextTestimonial, 5000);
+
 function scrollToContact() {
     const contactSection = document.querySelector('.contact');
     if (contactSection) {
