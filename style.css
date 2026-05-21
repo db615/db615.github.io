@@ -365,6 +365,13 @@ nav {
     display: block;
 }
 
+/* Remove underline and default link styles for product links */
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 /* Ready Products Section */
 .ready-products {
     padding: 4.5rem 5%;
