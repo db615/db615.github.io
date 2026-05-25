@@ -19,12 +19,12 @@ nav {
     align-items: center;
     padding: 1rem 5%;
     gap: 3rem;
-    background: #7D2F15;
+    background: #ffffff;
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .logo {
@@ -33,6 +33,18 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.logo-image {
+    display: block;
+    width: auto;
+    height: 44px;
+    object-fit: contain;
+}
+
+.logo .logo-circle,
+.logo > span {
+    display: none;
 }
 
 .logo-circle {
@@ -53,7 +65,7 @@ nav {
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #D85A30;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -2736,6 +2748,299 @@ footer {
     box-shadow: 0 10px 25px rgba(216, 90, 42, 0.25);
 }
 
+/* Service Detail Visuals */
+.service-visual {
+    width: 100%;
+    min-height: 400px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111827;
+}
+
+.visual-window {
+    width: min(100%, 520px);
+    min-height: 310px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.2rem;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+.visual-topbar {
+    display: flex;
+    gap: 0.45rem;
+    margin-bottom: 1.4rem;
+}
+
+.visual-topbar span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #cbd5e1;
+}
+
+.crawler-targets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.2rem;
+}
+
+.crawler-targets div,
+.erp-grid div {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 0.9rem;
+}
+
+.crawler-targets strong,
+.crawler-targets small,
+.erp-grid strong,
+.erp-grid small {
+    display: block;
+}
+
+.crawler-targets strong {
+    color: #2563eb;
+    font-size: 1.35rem;
+}
+
+.crawler-targets small,
+.erp-grid small {
+    color: #64748b;
+    font-size: 0.75rem;
+}
+
+.crawler-flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.crawler-flow span {
+    background: #e8f1ff;
+    color: #1d4ed8;
+    border-radius: 999px;
+    padding: 0.45rem 0.55rem;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.crawler-table {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 0.75fr;
+    gap: 0.55rem;
+}
+
+.crawler-table span {
+    height: 15px;
+    border-radius: 999px;
+    background: #e5e7eb;
+}
+
+.crawler-table span:nth-child(3n) {
+    background: #bfdbfe;
+}
+
+.erp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+    margin-bottom: 1.3rem;
+}
+
+.erp-grid strong {
+    color: #0f172a;
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+}
+
+.erp-metrics {
+    height: 95px;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.7rem;
+    padding: 0.8rem;
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 0.5rem;
+}
+
+.erp-metrics span {
+    flex: 1;
+    min-height: 18px;
+    border-radius: 999px 999px 0 0;
+    background: linear-gradient(180deg, #D85A30, #fbbf24);
+}
+
+.cms-editor {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 1rem;
+}
+
+.cms-editor aside {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.8rem;
+    background: #f8fafc;
+    border-radius: 0.5rem;
+}
+
+.cms-editor aside span,
+.editor-line,
+.editor-title,
+.editor-card {
+    border-radius: 0.5rem;
+    background: #e5e7eb;
+}
+
+.cms-editor aside span {
+    height: 28px;
+}
+
+.cms-editor main {
+    min-height: 230px;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+}
+
+.editor-title {
+    width: 54%;
+    height: 28px;
+    margin-bottom: 1.2rem;
+    background: #bfdbfe;
+}
+
+.editor-line {
+    width: 72%;
+    height: 14px;
+    margin-bottom: 0.7rem;
+}
+
+.editor-line.wide {
+    width: 92%;
+}
+
+.editor-line.short {
+    width: 46%;
+}
+
+.editor-card {
+    height: 78px;
+    margin-top: 1.2rem;
+    background: #fff1ea;
+    border: 1px solid #fed7aa;
+}
+
+.demo-visual {
+    width: 90%;
+    min-height: 240px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo-visual-crawler {
+    gap: 1rem;
+}
+
+.demo-node {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #0f172a;
+    display: grid;
+    place-items: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.12);
+    z-index: 1;
+}
+
+.demo-node.active {
+    background: #2f80ed;
+    color: #ffffff;
+}
+
+.demo-line {
+    position: absolute;
+    width: 74%;
+    height: 3px;
+    background: #bfdbfe;
+}
+
+.demo-visual-erp {
+    display: grid;
+    grid-template-columns: repeat(2, 104px);
+    gap: 1rem;
+}
+
+.demo-visual-erp span,
+.publish-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.6rem;
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.1);
+}
+
+.demo-visual-erp span {
+    min-height: 76px;
+    display: grid;
+    place-items: center;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.publish-card {
+    width: min(100%, 290px);
+    padding: 1.3rem;
+    color: #0f172a;
+}
+
+.publish-card strong,
+.publish-card span,
+.publish-card em {
+    display: block;
+}
+
+.publish-card strong {
+    margin-bottom: 1rem;
+}
+
+.publish-card span {
+    height: 13px;
+    border-radius: 999px;
+    background: #e5e7eb;
+    margin-bottom: 0.65rem;
+}
+
+.publish-card span:nth-child(3) {
+    width: 64%;
+}
+
+.publish-card em {
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    background: #dcfce7;
+    color: #15803d;
+    font-style: normal;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
 /* FAQ Section */
 .faq-section {
     background: white;
@@ -2909,6 +3214,45 @@ footer {
 
     .demo-content {
         padding: 2rem;
+    }
+
+    .service-visual {
+        min-height: 320px;
+        padding: 1rem;
+    }
+
+    .visual-window {
+        min-height: 260px;
+        padding: 1rem;
+    }
+
+    .crawler-targets,
+    .crawler-flow,
+    .erp-grid,
+    .cms-editor {
+        grid-template-columns: 1fr;
+    }
+
+    .crawler-flow span {
+        text-align: left;
+    }
+
+    .demo-visual {
+        width: 100%;
+    }
+
+    .demo-visual-crawler {
+        gap: 0.45rem;
+    }
+
+    .demo-node {
+        width: 64px;
+        height: 64px;
+        font-size: 0.75rem;
+    }
+
+    .demo-visual-erp {
+        grid-template-columns: repeat(2, minmax(84px, 1fr));
     }
 
     .faq-section {

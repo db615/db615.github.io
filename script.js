@@ -5,16 +5,19 @@ const testimonialCards = document.querySelectorAll('.testimonial-card');
 let currentTestimonial = 0;
 
 function showTestimonial(index) {
+    if (!testimonialCards.length) return;
     testimonialCards.forEach(card => card.classList.remove('active'));
     testimonialCards[index].classList.add('active');
 }
 
 function nextTestimonial() {
+    if (!testimonialCards.length) return;
     currentTestimonial = (currentTestimonial + 1) % testimonialCards.length;
     showTestimonial(currentTestimonial);
 }
 
 function prevTestimonial() {
+    if (!testimonialCards.length) return;
     currentTestimonial = (currentTestimonial - 1 + testimonialCards.length) % testimonialCards.length;
     showTestimonial(currentTestimonial);
 }
@@ -23,7 +26,9 @@ prevBtns.forEach(btn => btn.addEventListener('click', prevTestimonial));
 nextBtns.forEach(btn => btn.addEventListener('click', nextTestimonial));
 
 // Auto-rotate testimonials every 5 seconds
-setInterval(nextTestimonial, 5000);
+if (testimonialCards.length) {
+    setInterval(nextTestimonial, 5000);
+}
 
 function scrollToContact() {
     const contactSection = document.querySelector('.contact');
@@ -108,19 +113,20 @@ const navToggleLink = document.getElementById('nav-toggle-link');
 const heroSection = document.getElementById('hero');
 const servicesSection = document.getElementById('services');
 
-window.addEventListener('scroll', function() {
-    const heroTop = heroSection.getBoundingClientRect().top;
-    const servicesTop = servicesSection.getBoundingClientRect().top;
-    const windowCenter = window.innerHeight / 2;
+if (navToggleLink && heroSection && servicesSection) {
+    window.addEventListener('scroll', function() {
+        const servicesTop = servicesSection.getBoundingClientRect().top;
+        const windowCenter = window.innerHeight / 2;
 
-    if (servicesTop < windowCenter) {
-        navToggleLink.textContent = 'Home';
-        navToggleLink.href = '#hero';
-    } else {
-        navToggleLink.textContent = 'Services';
-        navToggleLink.href = '#services';
-    }
-});
+        if (servicesTop < windowCenter) {
+            navToggleLink.textContent = 'Home';
+            navToggleLink.href = '#hero';
+        } else {
+            navToggleLink.textContent = 'Services';
+            navToggleLink.href = '#services';
+        }
+    });
+}
 // FAQ Accordion Toggle
 function toggleFAQ(button) {
     const faqItem = button.parentElement;

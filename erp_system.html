@@ -3,89 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Try-on - DB Company</title>
+    <title>ERP System - DB Company</title>
+    <meta name="description" content="DB Company develops ERP systems for sales, inventory, finance, HR, reporting, and workflow management in one integrated platform.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">
             <img src="assets/images/logobruklin.png" alt="Bruklin logo" class="logo-image">
-            <div class="logo-circle">◉</div>
+            <div class="logo-circle">&#9673;</div>
             <span>DB</span>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#hero">Services</a></li>
+            <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#ready-products">Products</a></li>
             <li><a href="index.html#our-work">Our work</a></li>
         </ul>
         <button class="nav-contact-btn" onclick="window.location.href='index.html#contact'">Contact US</button>
     </nav>
 
-    <!-- Service Hero Section -->
     <section class="service-hero">
         <div class="service-hero-content">
-            <h1>Virtual Try-on</h1>
-            <p>Virtual Try-On (VTO) is an AI and AR-driven technology that allows customers to visualize apparel, accessories, or cosmetics on themselves instantly, reducing returns and increasing purchase confidence. Using 3D mapping and computer vision, it enables virtual fitting for clothing, cosmetics, and eyewear, fostering a more engaging and personalized online shopping experience.</p>
+            <h1>ERP System</h1>
+            <p>Our ERP system connects daily operations into one streamlined platform. Manage sales, inventory, procurement, finance, HR, approvals, and reports from a single system built around your business process.</p>
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="service-features">
         <div class="features-container">
-            <!-- Left Column - Features List -->
             <div class="features-left">
                 <div class="features-label">Features</div>
-                <h2 class="features-title">Virtual tryon ko features</h2>
-                <p class="features-description">Maximize success with our flexible product features. Customize, stay compatible across platforms, and receive reliable support for optimized performance.</p>
+                <h2 class="features-title">ERP system features</h2>
+                <p class="features-description">Bring departments, data, and decisions together with a flexible ERP platform that reduces manual work and improves visibility.</p>
 
-                <!-- Feature Items -->
                 <div class="feature-list">
                     <div class="feature-item-service">
                         <div class="feature-number">Feature 1</div>
-                        <p class="feature-text">Leverage real-time insights for well-informed decisions. Track key metrics based on data-driven analysis.</p>
+                        <p class="feature-text">Centralize sales, purchases, stock, accounts, staff records, and workflows in one secure system.</p>
                     </div>
 
                     <div class="feature-item-service">
                         <div class="feature-number">Feature 2</div>
-                        <p class="feature-text">Simplify data visualization. Choose intuitive charts and interactive graphs for clear presentation.</p>
+                        <p class="feature-text">Track approvals, inventory movement, invoices, payments, and operational tasks in real time.</p>
                     </div>
 
                     <div class="feature-item-service">
                         <div class="feature-number">Feature 3</div>
-                        <p class="feature-text">Advanced analytics for deeper insights. Discover patterns and hidden value through data segmentation.</p>
+                        <p class="feature-text">Use dashboards and role-based reports to understand performance across departments and branches.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Column - Image/Dashboard -->
             <div class="features-right">
                 <div class="feature-image-container">
-                    <img src="assets/images/virtual_tryon1.png" alt="Virtual Try-on Dashboard" class="feature-image">
+                    <div class="service-visual service-visual-erp" aria-label="ERP dashboard preview">
+                        <div class="visual-window">
+                            <div class="visual-topbar"><span></span><span></span><span></span></div>
+                            <div class="erp-grid">
+                                <div><strong>Sales</strong><small>Orders, invoices, CRM</small></div>
+                                <div><strong>Inventory</strong><small>Stock, warehouse, items</small></div>
+                                <div><strong>Finance</strong><small>Ledger, billing, reports</small></div>
+                                <div><strong>HR</strong><small>Staff, payroll, leave</small></div>
+                            </div>
+                            <div class="erp-metrics">
+                                <span style="height: 46%"></span>
+                                <span style="height: 72%"></span>
+                                <span style="height: 58%"></span>
+                                <span style="height: 86%"></span>
+                                <span style="height: 64%"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Demo Section -->
     <section class="service-demo">
         <div class="demo-container">
-            <!-- Left - Image -->
             <div class="demo-image">
-                <img src="assets/images/virtual_tryon2.png" alt="Virtual Try-on Demo" class="demo-img">
+                <div class="demo-visual demo-visual-erp" aria-hidden="true">
+                    <span>Sales</span>
+                    <span>Stock</span>
+                    <span>Finance</span>
+                    <span>People</span>
+                </div>
             </div>
 
-            <!-- Right - Content -->
             <div class="demo-content">
-                <h2>Know how the machine works before you use</h2>
-                <p>Start your journey towards data-driven success by taking advantage of our demo session.</p>
-                <button class="btn-demo">Request a demo</button>
+                <h2>Know how the ERP works before you use</h2>
+                <p>Walk through modules, user roles, reports, and workflows in a demo matched to your company structure.</p>
+                <button class="btn-demo" onclick="window.location.href='index.html#contact'">Request a demo</button>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="faq-section">
         <div class="faq-container">
             <div class="faq-header">
@@ -96,31 +109,51 @@
             <div class="faq-items">
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How do I get started with your product?</span>
-                        <span class="faq-icon">−</span>
+                        <span>Which modules are included in the ERP system?</span>
+                        <span class="faq-icon">-</span>
                     </button>
                     <div class="faq-answer" style="display: block;">
-                        <p>Sign up on our website, explore features, customize your profile, and start using our product. We're here to help!</p>
+                        <p>Common modules include sales, inventory, purchase, finance, HR, approvals, reporting, and customer management.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What payment methods do you accept?</span>
+                        <span>Can the ERP be customized for our workflow?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>We accept all major credit cards, digital wallets, and bank transfers for your convenience.</p>
+                        <p>Yes, modules, fields, reports, permissions, and approval flows can be customized around your existing process.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Is there a free trial available?</span>
+                        <span>Does it support multiple user roles?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes, we offer a 14-day free trial for all new users. No credit card is required to get started.</p>
+                        <p>Yes, the system supports role-based access so each team member only sees the tools and data they need.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can we migrate existing data?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We can help migrate data from spreadsheets, old software, or databases after reviewing the data structure.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can reports be exported?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, reports can be exported to common formats and filtered by date, department, branch, user, or status.</p>
                     </div>
                 </div>
 
@@ -130,27 +163,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Our dedicated support team is available 24/7 to assist you via email, chat, and phone.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Can I cancel my subscription?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, you can cancel anytime from your account settings. No questions asked, no hidden fees.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Is my data secure with your product?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We use enterprise-grade encryption and comply with all major data protection regulations to keep your data safe.</p>
+                        <p>Our team provides onboarding, training, bug fixes, and ongoing support after launch.</p>
                     </div>
                 </div>
             </div>
@@ -163,13 +176,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="about_us.html">About</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Partnerships</a></li>
                 </ul>
@@ -185,7 +197,7 @@
             <div class="footer-section">
                 <h4>Follow Us</h4>
                 <div class="social-icons-footer">
-                    <a href="#" class="social-icon-footer" title="Twitter">𝕏</a>
+                    <a href="#" class="social-icon-footer" title="Twitter">X</a>
                     <a href="#" class="social-icon-footer" title="Facebook">f</a>
                     <a href="#" class="social-icon-footer" title="LinkedIn">in</a>
                 </div>

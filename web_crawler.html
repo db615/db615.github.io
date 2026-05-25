@@ -3,89 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Try-on - DB Company</title>
+    <title>Web Crawler - DB Company</title>
+    <meta name="description" content="DB Company builds web crawler systems for structured data extraction, monitoring, validation, and reporting across business websites and public sources.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">
             <img src="assets/images/logobruklin.png" alt="Bruklin logo" class="logo-image">
-            <div class="logo-circle">◉</div>
+            <div class="logo-circle">&#9673;</div>
             <span>DB</span>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#hero">Services</a></li>
+            <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#ready-products">Products</a></li>
             <li><a href="index.html#our-work">Our work</a></li>
         </ul>
         <button class="nav-contact-btn" onclick="window.location.href='index.html#contact'">Contact US</button>
     </nav>
 
-    <!-- Service Hero Section -->
     <section class="service-hero">
         <div class="service-hero-content">
-            <h1>Virtual Try-on</h1>
-            <p>Virtual Try-On (VTO) is an AI and AR-driven technology that allows customers to visualize apparel, accessories, or cosmetics on themselves instantly, reducing returns and increasing purchase confidence. Using 3D mapping and computer vision, it enables virtual fitting for clothing, cosmetics, and eyewear, fostering a more engaging and personalized online shopping experience.</p>
+            <h1>Web Crawler</h1>
+            <p>Our web crawler system collects, structures, and monitors data from websites, marketplaces, directories, and public sources. It helps teams track prices, leads, content changes, inventory, and market signals with clean exports, reliable scheduling, and easy-to-review dashboards.</p>
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="service-features">
         <div class="features-container">
-            <!-- Left Column - Features List -->
             <div class="features-left">
                 <div class="features-label">Features</div>
-                <h2 class="features-title">Virtual tryon ko features</h2>
-                <p class="features-description">Maximize success with our flexible product features. Customize, stay compatible across platforms, and receive reliable support for optimized performance.</p>
+                <h2 class="features-title">Web crawler system features</h2>
+                <p class="features-description">Turn scattered online information into structured business data with crawling workflows designed for accuracy, speed, and repeatable monitoring.</p>
 
-                <!-- Feature Items -->
                 <div class="feature-list">
                     <div class="feature-item-service">
                         <div class="feature-number">Feature 1</div>
-                        <p class="feature-text">Leverage real-time insights for well-informed decisions. Track key metrics based on data-driven analysis.</p>
+                        <p class="feature-text">Schedule recurring crawls, monitor target URLs, and receive fresh data without manual copy-paste work.</p>
                     </div>
 
                     <div class="feature-item-service">
                         <div class="feature-number">Feature 2</div>
-                        <p class="feature-text">Simplify data visualization. Choose intuitive charts and interactive graphs for clear presentation.</p>
+                        <p class="feature-text">Extract structured fields such as titles, prices, contacts, images, stock status, links, and custom page data.</p>
                     </div>
 
                     <div class="feature-item-service">
                         <div class="feature-number">Feature 3</div>
-                        <p class="feature-text">Advanced analytics for deeper insights. Discover patterns and hidden value through data segmentation.</p>
+                        <p class="feature-text">Export validated results to CSV, dashboards, APIs, or internal systems for reporting and automation.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Column - Image/Dashboard -->
             <div class="features-right">
                 <div class="feature-image-container">
-                    <img src="assets/images/virtual_tryon1.png" alt="Virtual Try-on Dashboard" class="feature-image">
+                    <div class="service-visual service-visual-crawler" aria-label="Web crawler dashboard preview">
+                        <div class="visual-window">
+                            <div class="visual-topbar"><span></span><span></span><span></span></div>
+                            <div class="crawler-targets">
+                                <div><strong>1,248</strong><small>Pages crawled</small></div>
+                                <div><strong>97%</strong><small>Parse accuracy</small></div>
+                                <div><strong>42</strong><small>New changes</small></div>
+                            </div>
+                            <div class="crawler-flow">
+                                <span>Seed URLs</span>
+                                <span>Extract</span>
+                                <span>Validate</span>
+                                <span>Export</span>
+                            </div>
+                            <div class="crawler-table">
+                                <span></span><span></span><span></span>
+                                <span></span><span></span><span></span>
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Demo Section -->
     <section class="service-demo">
         <div class="demo-container">
-            <!-- Left - Image -->
             <div class="demo-image">
-                <img src="assets/images/virtual_tryon2.png" alt="Virtual Try-on Demo" class="demo-img">
+                <div class="demo-visual demo-visual-crawler" aria-hidden="true">
+                    <span class="demo-node active">Crawl</span>
+                    <span class="demo-node">Clean</span>
+                    <span class="demo-node">Sync</span>
+                    <div class="demo-line"></div>
+                </div>
             </div>
 
-            <!-- Right - Content -->
             <div class="demo-content">
-                <h2>Know how the machine works before you use</h2>
-                <p>Start your journey towards data-driven success by taking advantage of our demo session.</p>
-                <button class="btn-demo">Request a demo</button>
+                <h2>Know how the crawler works before you use</h2>
+                <p>Review sources, extraction fields, delivery format, and crawl frequency in a demo tailored to your data needs.</p>
+                <button class="btn-demo" onclick="window.location.href='index.html#contact'">Request a demo</button>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="faq-section">
         <div class="faq-container">
             <div class="faq-header">
@@ -96,61 +112,61 @@
             <div class="faq-items">
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How do I get started with your product?</span>
-                        <span class="faq-icon">−</span>
+                        <span>What type of websites can the crawler collect data from?</span>
+                        <span class="faq-icon">-</span>
                     </button>
                     <div class="faq-answer" style="display: block;">
-                        <p>Sign up on our website, explore features, customize your profile, and start using our product. We're here to help!</p>
+                        <p>It can collect data from public pages, directories, marketplaces, listing sites, blogs, and other approved sources based on your requirements.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What payment methods do you accept?</span>
+                        <span>Can the crawler run automatically?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>We accept all major credit cards, digital wallets, and bank transfers for your convenience.</p>
+                        <p>Yes, crawls can be scheduled hourly, daily, weekly, or at a custom interval depending on your workflow.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Is there a free trial available?</span>
+                        <span>How do I receive the extracted data?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes, we offer a 14-day free trial for all new users. No credit card is required to get started.</p>
+                        <p>We can deliver data through dashboards, CSV files, spreadsheets, database sync, or an API integration.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Is technical support available?</span>
+                        <span>Can it detect changes on a website?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Our dedicated support team is available 24/7 to assist you via email, chat, and phone.</p>
+                        <p>Yes, the system can monitor selected pages and flag changes in prices, text, availability, links, or other tracked fields.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Can I cancel my subscription?</span>
+                        <span>Is the crawler customizable?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes, you can cancel anytime from your account settings. No questions asked, no hidden fees.</p>
+                        <p>Yes, fields, crawl rules, validation rules, and export formats can be customized for each project.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Is my data secure with your product?</span>
+                        <span>Do you provide technical support?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>We use enterprise-grade encryption and comply with all major data protection regulations to keep your data safe.</p>
+                        <p>Our team supports setup, monitoring, maintenance, and adjustments when source websites change.</p>
                     </div>
                 </div>
             </div>
@@ -163,13 +179,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="about_us.html">About</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Partnerships</a></li>
                 </ul>
@@ -185,7 +200,7 @@
             <div class="footer-section">
                 <h4>Follow Us</h4>
                 <div class="social-icons-footer">
-                    <a href="#" class="social-icon-footer" title="Twitter">𝕏</a>
+                    <a href="#" class="social-icon-footer" title="Twitter">X</a>
                     <a href="#" class="social-icon-footer" title="Facebook">f</a>
                     <a href="#" class="social-icon-footer" title="LinkedIn">in</a>
                 </div>
