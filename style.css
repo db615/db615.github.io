@@ -75,6 +75,30 @@ nav {
     color: #3b82f6;
 }
 
+.nav-seminar-btn {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.7rem 1.35rem;
+    border-radius: 0.5rem;
+    background: #7D2F15;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 10px 24px rgba(125, 47, 21, 0.22);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.nav-seminar-btn:hover,
+.nav-seminar-btn.active {
+    background: #D85A30;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(216, 90, 48, 0.3);
+}
+
 .nav-contact-btn {
     background: #D85A30;
     color: white;
@@ -84,7 +108,7 @@ nav {
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .nav-contact-btn:hover {
@@ -2116,6 +2140,13 @@ footer {
         font-size: 0.9rem;
     }
 
+    .nav-seminar-btn {
+        min-height: 38px;
+        padding: 0.55rem 0.8rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+
     .nav-contact-btn {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
@@ -3272,7 +3303,7 @@ footer {
     }
 }
 
-/* Seminal Page */
+/* seminar Page */
 .nav-links {
     gap: clamp(1rem, 3vw, 3rem);
 }
@@ -3291,21 +3322,21 @@ footer {
     border-radius: 999px;
 }
 
-.seminal-page {
+.seminar-page {
     background: #ffffff;
     color: #0f172a;
 }
 
-.seminal-page main {
+.seminar-page main {
     background: #ffffff;
 }
 
-.seminal-shell {
+.seminar-shell {
     width: min(1180px, 90vw);
     margin: 0 auto;
 }
 
-.seminal-hero {
+.seminar-hero {
     background:
         radial-gradient(circle at 82% 20%, rgba(216, 90, 48, 0.22), transparent 28%),
         linear-gradient(135deg, #7D2F15 0%, #4b1c0d 100%);
@@ -3314,15 +3345,15 @@ footer {
     clip-path: inset(0 -100vmax);
 }
 
-.seminal-hero-grid {
+.seminar-hero-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
     gap: 4rem;
     align-items: center;
 }
 
-.seminal-eyebrow,
-.seminal-section-header span,
+.seminar-eyebrow,
+.seminar-section-header span,
 .research-grid > div span {
     display: inline-flex;
     color: #D85A30;
@@ -3333,7 +3364,7 @@ footer {
     margin-bottom: 0.85rem;
 }
 
-.seminal-hero-copy h1 {
+.seminar-hero-copy h1 {
     color: #ffffff;
     font-size: clamp(2.5rem, 5vw, 4.6rem);
     line-height: 1.05;
@@ -3342,7 +3373,7 @@ footer {
     margin-bottom: 1.25rem;
 }
 
-.seminal-hero-copy p {
+.seminar-hero-copy p {
     color: #f8d7ca;
     font-size: 1.12rem;
     line-height: 1.7;
@@ -3350,15 +3381,15 @@ footer {
     margin-bottom: 2rem;
 }
 
-.seminal-actions {
+.seminar-actions {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 2.4rem;
 }
 
-.seminal-primary,
-.seminal-secondary {
+.seminar-primary,
+.seminar-secondary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -3371,31 +3402,31 @@ footer {
     transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
-.seminal-primary {
+.seminar-primary {
     background: #D85A30;
     color: #ffffff;
     box-shadow: 0 12px 24px rgba(216, 90, 48, 0.26);
 }
 
-.seminal-primary:hover,
-.seminal-secondary:hover {
+.seminar-primary:hover,
+.seminar-secondary:hover {
     transform: translateY(-2px);
 }
 
-.seminal-secondary {
+.seminar-secondary {
     background: #ffffff;
     color: #D85A30;
     border: 1px solid #f0b39d;
 }
 
-.seminal-secondary.light {
+.seminar-secondary.light {
     background: #ffffff;
     color: #D85A30;
     border-color: transparent;
     box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
 }
 
-.seminal-proof-row {
+.seminar-proof-row {
     display: flex;
     gap: clamp(0.8rem, 2vw, 1.5rem);
     flex-wrap: wrap;
@@ -3404,13 +3435,13 @@ footer {
     font-weight: 700;
 }
 
-.seminal-proof-row span {
+.seminar-proof-row span {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
 }
 
-.seminal-proof-row span::before {
+.seminar-proof-row span::before {
     content: '';
     width: 8px;
     height: 8px;
@@ -3418,7 +3449,7 @@ footer {
     border: 2px solid #D85A30;
 }
 
-.seminal-hero-art {
+.seminar-hero-art {
     position: relative;
     min-height: 440px;
     display: grid;
@@ -3502,7 +3533,7 @@ footer {
 .tile-b { left: 8%; top: 42%; }
 .tile-c { right: 18%; bottom: 16%; }
 
-.seminal-section,
+.seminar-section,
 .journey-section {
     background: #ffffff;
     padding: 4.2rem 0;
@@ -3512,12 +3543,12 @@ footer {
     background: #FFF1EA;
 }
 
-.seminal-section-header {
+.seminar-section-header {
     text-align: center;
     margin-bottom: 2.6rem;
 }
 
-.seminal-section-header h2,
+.seminar-section-header h2,
 .research-grid h2,
 .cta-panel h2 {
     color: #0f172a;
@@ -3526,7 +3557,7 @@ footer {
     margin-bottom: 0.65rem;
 }
 
-.seminal-section-header p {
+.seminar-section-header p {
     color: #64748b;
     font-size: 0.98rem;
 }
@@ -3744,7 +3775,7 @@ footer {
     margin-bottom: 1rem;
 }
 
-.seminal-cta {
+.seminar-cta {
     background: #ffffff;
     padding: 1rem 0 4rem;
 }
@@ -3825,21 +3856,28 @@ footer {
         font-size: 0.78rem;
     }
 
+    .nav-seminar-btn {
+        min-height: 36px;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.78rem;
+        white-space: nowrap;
+    }
+
     .nav-contact-btn {
         padding: 0.55rem 0.75rem;
         font-size: 0.78rem;
     }
 
-    .seminal-hero {
+    .seminar-hero {
         padding: 3.4rem 0 3rem;
     }
 
-    .seminal-hero-grid {
+    .seminar-hero-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .seminal-hero-art {
+    .seminar-hero-art {
         min-height: 320px;
     }
 
