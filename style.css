@@ -27,6 +27,13 @@ nav {
     border-bottom: 1px solid #e5e7eb;
 }
 
+.logo-link {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
