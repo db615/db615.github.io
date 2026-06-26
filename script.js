@@ -30,6 +30,31 @@ if (testimonialCards.length) {
     setInterval(nextTestimonial, 5000);
 }
 
+// Seminar promotion modal
+const seminarPromoOverlay = document.querySelector('.seminar-promo-overlay');
+const seminarPromoClose = document.querySelector('.seminar-promo-close');
+
+if (seminarPromoOverlay && seminarPromoClose) {
+    document.body.classList.add('seminar-promo-open');
+
+    function closeSeminarPromo() {
+        seminarPromoOverlay.classList.add('is-hidden');
+        document.body.classList.remove('seminar-promo-open');
+    }
+
+    seminarPromoClose.addEventListener('click', closeSeminarPromo);
+    seminarPromoOverlay.addEventListener('click', event => {
+        if (event.target === seminarPromoOverlay) {
+            closeSeminarPromo();
+        }
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') {
+            closeSeminarPromo();
+        }
+    });
+}
+
 function scrollToContact() {
     const contactSection = document.querySelector('.contact');
     if (contactSection) {
